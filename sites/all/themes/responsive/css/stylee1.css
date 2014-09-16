@@ -1,0 +1,88 @@
+
+
+header #top-strip {
+  float:left;
+  width:100%;
+  background-color:#0095e6;
+  padding:10px 0;
+}
+header #login-box {
+  margin-top:6px;
+}
+header #login-box a {
+  font-size:16px;
+  margin:0 10px;
+}
+header #login-box a span {
+  font-family:Roboto;
+  font-weight:400;
+  margin-left:6px;
+  font-size:14px;
+}
+
+
+.containerr {
+  padding-right:0!important;
+  padding-left:0!important;
+}
+
+
+
+.main-flexslider .slides .slides .containerr {
+  position:absolute;
+  min-height:640px;
+  top:0px;
+}
+
+
+
+ 
+
+
+
+
+
+
+@media screen and (max-width:450px) {
+#top-strip .social-icons {
+  display:none;
+}
+
+
+
+
+
+
+
+.social-icons {
+  padding:0;
+}
+.social-icons li {
+  float:left;
+  margin-right:5px;
+  border:1px solid rgba(255,255,255,0.3);
+  -webkit-border-radius:100px;
+  -moz-border-radius:100px;
+  -ms-border-radius:100px;
+  -o-border-radius:100px;
+  border-radius:100px;
+  padding:5px;
+  width:32px;
+  height:32px;
+  line-height:26px;
+  text-align:center;
+  transition:all 300ms ease-in-out;
+  -o-transition:all 300ms ease-in-out;
+  -moz-transition:all 300ms ease-in-out;
+  -webkit-transition:all 300ms ease-in-out;
+}
+.social-icons li a {
+  font-size:15px!important;
+  text-align:center;
+}
+.social-icons li:hover {
+  background-color:#fefefe;
+}
+.social-icons li:hover a {
+  color: #0095e6;
+}
