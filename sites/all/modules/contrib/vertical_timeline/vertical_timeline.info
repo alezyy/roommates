@@ -1,0 +1,17 @@
+name = jQuery vertical timeline integration
+description = Provides a simple timeline views style for jQuery vertical timeline Plugin - https://github.com/technotarek/timeliner
+package = Views
+dependencies[] = libraries
+dependencies[] = views
+dependencies[] = jquery_update
+
+core = 7.x
+files[] = vertical_timeline_views_plugin_style.inc
+files[] = vertical_timeline_plugin_row_vertical_timelinefields.inc
+
+; Information added by Drupal.org packaging script on 2014-04-10
+version = "7.x-1.0"
+core = "7.x"
+project = "vertical_timeline"
+datestamp = "1397143158"
+

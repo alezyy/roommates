@@ -1,0 +1,37 @@
+element {
+}
+.well {
+    min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    background-color: #F5F5F5;
+    border: 1px solid #E3E3E3;
+    border-radius: 8px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05) inset;
+    border-color: #CCC;
+    border-bottom: 1px solid #A3978D;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    
+    
+}
+
+#block-system-user-menu, #block-user-new, #block-system, #block-user-online  {
+    border-color: #CCC;
+    border-bottom: 1px solid #A3978D;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+
+.user_picture_block {
+    height: 120px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.user_picture_block h3 {
+    font-size: 15px;
+    border: 1px ;
+    border-radius: 8px;
+}

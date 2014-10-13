@@ -1,5 +1,4 @@
- <?php
-
+<?php
 /**
  * @file
  * Default theme implementation to display a single Drupal page.
@@ -64,315 +63,106 @@
  * - $page['header']: Items for the header region.
  * - $page['footer']: Items for the footer region.
  *
+ * @see bootstrap_preprocess_page()
  * @see template_preprocess()
  * @see template_preprocess_page()
+ * @see bootstrap_process_page()
  * @see template_process()
  * @see html.tpl.php
  *
  * @ingroup themeable
  */
 ?>
-
-<div id='top'>
-<header>
-<div id="top-strip">
-	<div class="container">
-		<ul class="pull-left social-icons">
-			<li><a href="#" class="fa fa-google-plus"></a></li>
-			<li><a href="#" class="fa fa-twitter"></a></li>
-			<li><a href="#" class="fa fa-pinterest"></a></li>
-			<li><a href="#" class="fa fa-dribbble"></a></li>
-			<li><a href="#" class="fa fa-linkedin"></a></li>
-			<li><a href="#" class="fa fa-facebook"></a></li>
-		</ul>
-		<div id="login-box" class='pull-right'>
-			<a href="login.php" class='fa fa-user'><span>Login</span></a>
-			<a href="join.php" class='fa fa-pencil'><span>Register</span></a>
-		</div>
-	</div>
-</div>
-</header>
-<!-- /Header -->
-<div class="slider-section">
-	<div id="premium-bar">
-		<div class="container">
-			<nav class="navbar navbar-default" role="navigation">
-			<div class="container-fluid">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="index.html"><img src="sites/all/themes/splash_woly/img/logo.png" alt="logo"></a>
-				</div>
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav navbar-right">
-						<li class="active"><a href="<?php print base_path();?>">Home</a></li>
-						<li><a href="index.html">Our Services</a></li>
-						<li><a href="index.html">News</a></li>
-					        <li><a href="index.html">contact</a></li>
-					</ul>
-				</div>
-				<!-- /.navbar-collapse -->
-			</div>
-			<!-- /.container-fluid -->
-			</nav>
-		</div>
-	</div>
-	<!-- Slider-Section -->
-	<div class="main-flexslider">
-		<ul class="slides">
-			<li class='slides' id='slide-n1'><img src="sites/all/themes/splash_woly/img/slide-01.jpg" alt="slide 01">
-			<div class="slide-box">
-                            <div id="container"> 
-                                  <div id="vertical"> 				
-                         <h3 style="text-align:center;">Login - Register</h3>
-              <form action="login.php">
-                <fieldset> 
-       
-              <div> 
-              <label>Username 
-              <input id="email" name="email" type="email" placeholder="example@domain.com" required>
-		</label> 
-              <label>Password
-              <input id="family-name" name="family-name" type="text" placeholder="Password" required autofocus> 
-		     </label>
-                             <button type=submit>Login</button>
-                     </div>
-    
-  
-                     </fieldset> 
-  
-                       
-                   </form>            
-                </div>               
-           </div> 
-                         
-	 </p>
-	<ul class="slide-item-features">
-					 
-    </ul>
-				 
- </div>
-</li>
-			<li class='slides' id='slide-n2'><img src="sites/all/themes/splash_woly/img/slide-02.jpg" alt="slide">
-			<div class="slide-box">
-	  <div id="container"> 
-                                  <div id="vertical"> 
-	   
-					
-                         <h3 style="text-align:center;">Login - Register</h3>
-              <form action="login.php">
-                <fieldset> 
-       
-              <div> 
-              <label>Username 
-              <input id="email" name="email" type="email" placeholder="example@domain.com" required>
-		</label> 
-              <label>Password
-              <input id="family-name" name="family-name" type="text" placeholder="Password" required autofocus> 
-		     </label>
-                             <button type=submit>Login</button>
-                     </div>
-    
-  
-                     </fieldset> 
-  
-                       
-                   </form>            
-                </div>               
-           </div> 
-                         
-	 </p>
-	<ul class="slide-item-features">
-					 
-    </ul>
-			</div>
-			</li>
-			<li class='slides' id='slide-n3'><img src="sites/all/themes/splash_woly/img/slide-03.jpg" alt="slide">
-			<div class="slide-box">
-	     <div id="container"> 
-                                  <div id="vertical"> 
-	    				
-                         <h3 style="text-align:center;">Login - Register</h3>
-              <form action="login.php">
-                <fieldset> 
-       
-              <div> 
-              <label>Username 
-              <input id="email" name="email" type="email" placeholder="example@domain.com" required>
-		</label> 
-              <label>Password
-              <input id="family-name" name="family-name" type="text" placeholder="Password" required autofocus> 
-		     </label>
-                             <button type=submit>Login</button>
-                     </div>
-    
-  
-                     </fieldset> 
-  
-                       
-                   </form>            
-                </div>               
-           </div> 
-                         
-	 </p>
-	<ul class="slide-item-features">
-					 
-    </ul>
-	</div>
-</div>
-<!-- Search-Section -->
-<div class="search-section">
-	<div class="container">
-		<form>
-			
-		</form>
-	</div>
-</div>
-<!-- Recent-Listings-Section -->
-
-<!-- Agents-Section -->
-
-<!-- Services-Section -->
-<div class="services-section">
-	<div class="container">
-		<div class="title-box">
-			<h3>our services</h3>
-			<div class="bordered">
-			</div>
-		</div>
-		<div class="services-wrapper">
-			<div class="col-md-3 single-service">
-				<div class="bordered top-bordered">
-				</div>
-				<h4>student Apt</h4>
-				<p>
-					 fully customizable
-				</p>
-				<div class="fa fa-flask icon-service">
-				</div>
-				<div class="bordered">
-				</div>
-				<a href="#" class='readmore'>+ read more</a>
-			</div>
-			<div class="col-md-3 single-service">
-				<div class="bordered top-bordered">
-				</div>
-				<h4>Optimized sharing</h4>
-				<p>
-					 clean & well comented code
-				</p>
-				<div class="fa fa-clipboard icon-service">
-				</div>
-				<div class="bordered">
-				</div>
-				<a href="#" class='readmore'>+ read more</a>
-			</div>
-			<div class="col-md-3 single-service">
-				<div class="bordered top-bordered">
-				</div>
-				<h4>Customs services </h4>
-				<p>
-					 optimized for search engines
-				</p>
-				<div class="fa fa-globe icon-service">
-				</div>
-				<div class="bordered">
-				</div>
-				<a href="#" class='readmore'>+ read more</a>
-			</div>
-			<div class="col-md-3 single-service">
-				<div class="bordered top-bordered">
-				</div>
-				<h4>Connect Owner</h4>
-				<p>
-					 front-end services
-				</p>
-				<div class="fa fa-html5 icon-service">
-				</div>
-				<div class="bordered">
-				</div>
-				<a href="#" class='readmore'>+ read more</a>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- footer-section -->
-<footer>
-<div class="container">
-	<div class="col-md-3 footer-about">
-		<a class="logo" href="#"><img src="sites/all/themes/splash_woly/img/logof.png" alt="logo"></a>
-		<p>
-			 This is the official web site of RoommateCampus. A site dedicated to help students in Montreal to share apartment together.
-		</p>
-	</div>
-	<div class="col-md-3 footer-recent-posts">
-		<h3 class='footer-title'>recent posts</h3>
-		<ul>
-			<li><a href="#"><i class="fa fa-arrow-circle-right"></i> New Search Platform Update</a></li>
-			<li><a href="#"><i class="fa fa-arrow-circle-right"></i> Envato's Most Wanted - $5,000 for Ghost Themes</a></li>
-			<li><a href="#"><i class="fa fa-arrow-circle-right"></i> Update: WordPress Theme Submission Requirements</a></li>
-		</ul>
-	</div>
-	<div class="col-md-3 footer-contact-info">
-		<h3 class='footer-title'>contact info</h3>
-		<p class="website-number">
-			<i class="fa fa-phone"></i> 900 123 456 789
-		</p>
-		<p class="website-email">
-			<i class="fa fa-envelope"></i> info@roommatescampus.com
-		</p>
-		<p class="website-fax">
-			<i class="fa fa-print"></i> 900 123 456 789
-		</p>
-	</div>
-	<div class="col-md-3 footer-newsletter">
-		<h3 class='footer-title'>newsletter</h3>
-		<p>
-			 Roommates campus invite you to provide your submit your email for special news letter.
-		</p>
-		<form class='footer-search'>
-			<input type="text" placeholder='e-mail'>
-			<input type="submit">
-		</form>
-	</div>
-</div>
-</footer>
-<div class="bottom-strip">
-	<div class="container">
-		<div class="col-md-4">
-			<p class='pull-left'>
-				 © 2014 Roommates campus, All Rights Reserved
-			</p>
-		</div>
-		<div class="col-md-4 bottom-strip-middle">
-			<a href="#top" class='fa fa-arrow-circle-up' id='backtop-btn'></a>
-		</div>
-		<div class="col-md-4">
-			<ul class="social-icons">
-				<li><a href="#" class="fa fa-google-plus"></a></li>
-				<li><a href="#" class="fa fa-twitter"></a></li>
-				<li><a href="#" class="fa fa-pinterest"></a></li>
-				<li><a href="#" class="fa fa-dribbble"></a></li>
-				<li><a href="#" class="fa fa-linkedin"></a></li>
-				<li><a href="#" class="fa fa-facebook"></a></li>
-			</ul>
-		</div>
-	</div>
-</div>
-
- <?php if ($page['sidebar_second']): ?>
-        <div id="sidebar-second" class="column sidebar"><div class="section">
-          <?php print render($page['sidebar_second']); ?>
-        </div></div> <!-- /.section, /#sidebar-second -->
+<header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
+  <div class="container">
+    <div class="navbar-header">
+      <?php if ($logo): ?>
+      <a class="logo navbar-btn pull-left" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
+        <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+      </a>
       <?php endif; ?>
 
-<div id="footer"><div class="section">
-      <?php print render($page['footer']); ?>
-    </div></div> <!-- /.section, /#footer -->
+      <?php if (!empty($site_name)): ?>
+      <a class="name navbar-brand" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a>
+      <?php endif; ?>
 
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
+      <div class="navbar-collapse collapse">
+        <nav role="navigation">
+          <?php if (!empty($primary_nav)): ?>
+            <?php print render($primary_nav); ?>
+          <?php endif; ?>
+          <?php if (!empty($secondary_nav)): ?>
+            <?php print render($secondary_nav); ?>
+          <?php endif; ?>
+          <?php if (!empty($page['navigation'])): ?>
+            <?php print render($page['navigation']); ?>
+          <?php endif; ?>
+        </nav>
+      </div>
+    <?php endif; ?>
+  </div>
+</header>
+
+<div class="main-container container">
+
+  <header role="banner" id="page-header">
+    <?php if (!empty($site_slogan)): ?>
+      <p class="lead"><?php print $site_slogan; ?></p>
+    <?php endif; ?>
+
+    <?php print render($page['header']); ?>
+  </header> <!-- /#page-header -->
+
+  <div class="row">
+
+    <?php if (!empty($page['sidebar_first'])): ?>
+      <aside class="col-sm-3" role="complementary">
+        <?php print render($page['sidebar_first']); ?>
+      </aside>  <!-- /#sidebar-first -->
+    <?php endif; ?>
+
+    <section<?php print $content_column_class; ?>>
+      <?php if (!empty($page['highlighted'])): ?>
+        <div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
+      <?php endif; ?>
+      <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
+      <a id="main-content"></a>
+      <?php print render($title_prefix); ?>
+      <?php if (!empty($title)): ?>
+        <h1 class="page-header"><?php print $title; ?></h1>
+      <?php endif; ?>
+      <?php print render($title_suffix); ?>
+      <?php print $messages; ?>
+      <?php if (!empty($tabs)): ?>
+        <?php print render($tabs); ?>
+      <?php endif; ?>
+      <?php if (!empty($page['help'])): ?>
+        <?php print render($page['help']); ?>
+      <?php endif; ?>
+      <?php if (!empty($action_links)): ?>
+        <ul class="action-links"><?php print render($action_links); ?></ul>
+      <?php endif; ?>
+      <?php print render($page['content']); ?>
+    </section>
+
+    <?php if (!empty($page['sidebar_second'])): ?>
+      <aside class="col-sm-3" role="complementary">
+        <?php print render($page['sidebar_second']); ?>
+      </aside>  <!-- /#sidebar-second -->
+    <?php endif; ?>
+
+  </div>
+</div>
+<footer class="footer container">
+  <?php print render($page['footer']); ?>
+</footer>

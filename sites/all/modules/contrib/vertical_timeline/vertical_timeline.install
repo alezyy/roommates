@@ -1,0 +1,31 @@
+<?php
+
+/**
+ * @file
+ * Install, update, and uninstall functions for the admin menu module.
+ */
+
+/**
+ * Implements hook_requirements().
+ */
+function vertical_timeline_requirements($phase) {
+  $requirements = array();
+  // Ensure translations do not break at install time.
+  $t = get_t();
+  $requirements['vertical_timeline'] = array(
+    'title' => $t('Vertical Timeline Library'),
+  );
+
+  $libraries = libraries_get_libraries();
+  if (isset($libraries['vertical_timeline'])) {
+    $requirements['vertical_timeline']['value'] = $t('Installed');
+    $requirements['vertical_timeline']['severity'] = REQUIREMENT_OK;
+  }
+  else {
+    $requirements['vertical_timeline']['value'] = $t('Not Installed');
+    $requirements['vertical_timeline']['severity'] = REQUIREMENT_ERROR;
+    $requirements['vertical_timeline']['description'] = $t('vertical_timeline library not found');
+  }
+
+  return $requirements;
+}

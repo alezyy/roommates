@@ -13,6 +13,7 @@ regions[sidebar_second] = 'Secondary'
 regions[footer] = 'Footer'
 regions[page_top]       = 'Page top'
 regions[page_bottom]    = 'Page bottom'
+regions[middle] = 'Middle'
 
 
 
@@ -26,6 +27,9 @@ stylesheets[all][] = css/owl.carousel.css
 stylesheets[all][] = css/owl.theme.css
 stylesheets[all][] = css/style.css
 stylesheets[all][] = css/zero.css
+stylesheets[all][] = css/woly.css
+stylesheets[all][] = Assets/master.css
+
 
 
 scripts[] = 'js/jquery-2.1.0.min.js'

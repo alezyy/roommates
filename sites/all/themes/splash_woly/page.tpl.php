@@ -125,115 +125,23 @@
 	</div>
 	<!-- Slider-Section -->
 	<div class="main-flexslider">
-		<ul class="slides">
-			<li class='slides' id='slide-n1'><img src="sites/all/themes/splash_woly/img/slide-01.jpg" alt="slide 01">
-			<div class="slide-box">
-                            <div id="container"> 
-                                  <div id="vertical"> 				
-                         <h3 style="text-align:center;">Login - Register</h3>
-              <form action="login.php">
-                <fieldset> 
-       
-              <div> 
-              <label>Username 
-              <input id="email" name="email" type="email" placeholder="example@domain.com" required>
-		</label> 
-              <label>Password
-              <input id="family-name" name="family-name" type="text" placeholder="Password" required autofocus> 
-		     </label>
-                             <button type=submit>Login</button>
-                     </div>
-    
-  
-                     </fieldset> 
-  
-                       
-                   </form>            
-                </div>               
-           </div> 
-                         
-	 </p>
-	<ul class="slide-item-features">
-					 
-    </ul>
-				 
- </div>
+	<ul class="slides">
+<li class='slides' id='slide-n1'><img src="sites/all/themes/splash_woly/img/slide-01.jpg" alt="slide 01">
 </li>
-			<li class='slides' id='slide-n2'><img src="sites/all/themes/splash_woly/img/slide-02.jpg" alt="slide">
-			<div class="slide-box">
-	  <div id="container"> 
+<li class='slides' id='slide-n2'><img src="sites/all/themes/splash_woly/img/slide-02.jpg" alt="slide">
+	 </li>
+<li class='slides' id='slide-n3'><img src="sites/all/themes/splash_woly/img/slide-03.jpg" alt="slide">
+			 </li>
+        </ul>
+              <div class="main-flexslider"> 
+             <div class="slide-box">
+	                  <div id="container"> 
                                   <div id="vertical"> 
-	   
-					
-                         <h3 style="text-align:center;">Login - Register</h3>
-              <form action="login.php">
-                <fieldset> 
-       
-              <div> 
-              <label>Username 
-              <input id="email" name="email" type="email" placeholder="example@domain.com" required>
-		</label> 
-              <label>Password
-              <input id="family-name" name="family-name" type="text" placeholder="Password" required autofocus> 
-		     </label>
-                             <button type=submit>Login</button>
-                     </div>
-    
-  
-                     </fieldset> 
-  
-                       
-                   </form>            
-                </div>               
-           </div> 
-                         
-	 </p>
-	<ul class="slide-item-features">
-					 
-    </ul>
-			</div>
-			</li>
-			<li class='slides' id='slide-n3'><img src="sites/all/themes/splash_woly/img/slide-03.jpg" alt="slide">
-			<div class="slide-box">
-	     <div id="container"> 
-                                  <div id="vertical"> 
-	    				
-                         <h3 style="text-align:center;">Login - Register</h3>
-              <form action="login.php">
-                <fieldset> 
-       
-              <div> 
-              <label>Username 
-              <input id="email" name="email" type="email" placeholder="example@domain.com" required>
-		</label> 
-              <label>Password
-              <input id="family-name" name="family-name" type="text" placeholder="Password" required autofocus> 
-		     </label>
-                             <button type=submit>Login</button>
-                     </div>
-    
-  
-                     </fieldset> 
-  
-                       
-                   </form>            
-                </div>               
-           </div> 
-                         
-	 </p>
-	<ul class="slide-item-features">
-					 
-    </ul>
-	</div>
+                               <?php print render($page['middle']); ?>
+                                      </div>               
+			</div>	 </div>   </div>
 </div>
-<!-- Search-Section -->
-<div class="search-section">
-	<div class="container">
-		<form>
-			
-		</form>
-	</div>
-</div>
+ 
 <!-- Recent-Listings-Section -->
 
 <!-- Agents-Section -->
@@ -302,6 +210,11 @@
 		</div>
 	</div>
 </div>
+
+
+   
+
+
 <!-- footer-section -->
 <footer>
 <div class="container">
@@ -366,11 +279,7 @@
 	</div>
 </div>
 
- <?php if ($page['sidebar_second']): ?>
-        <div id="sidebar-second" class="column sidebar"><div class="section">
-          <?php print render($page['sidebar_second']); ?>
-        </div></div> <!-- /.section, /#sidebar-second -->
-      <?php endif; ?>
+  
 
 <div id="footer"><div class="section">
       <?php print render($page['footer']); ?>
